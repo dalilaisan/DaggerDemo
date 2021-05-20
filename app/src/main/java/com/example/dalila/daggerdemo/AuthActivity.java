@@ -1,13 +1,15 @@
 package com.example.dalila.daggerdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
+import dagger.android.support.DaggerAppCompatActivity;
+
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class AuthActivity extends DaggerAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_auth);
     }
 }
